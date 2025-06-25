@@ -14,24 +14,8 @@
         - [ ] Any time after
         -->
         <link rel="icon" href="img/Icon.png">
+        <link rel="stylesheet" href="styles.css">
         <title>Easea PC</title>
-        <style>
-            h1 {
-                background-color: #D2CFF5;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                font-size: 48px;
-            }
-
-            button {
-                background-color:yellowgreen;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-
-            body {
-                background-color: cornflowerblue;
-                color: greenyellow;
-            }
-        </style>
     </head>
     
     <body>
@@ -50,11 +34,17 @@
         - [ ] Project 4 (REQUIRED FEATURE) 
         - [ ] Any time after
         -->
-        <img id="header-img" src="./img/logo500.png"/>
-        <h1>Easea PC</h1>
-        <h2>Part Picker. Community. Shop.</h2>
-        <button type="button">Sign Up</button>
-        <button type="button">Contact</button>
+        <div class="header">
+            <img id="header-img" src="./img/Icon.png"/>
+            <div id="header-left">
+                <h1>Easea PC</h1>
+                <h2>Part Picker. Community. Shop.</h2>
+            </div>
+            <div id="header-right">
+                <button type="button">Sign Up</button>
+                <button type="button">Contact</button>
+            </div>
+        </div>
 
         
         <!-- about
@@ -148,7 +138,21 @@
             </article>
         </a>
             
-        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <!-- footer
+
+        Purpose:
+        - Section for reference information like links, copyright, or contact info
+
+        When To Modify:
+        - [ ] Project 3 (STRETCH FEATURE) 
+        - [ ] Any time after
+        -->
+        <div class="footer">
+            <p>&copy; 2025 Easea PC. All rights reserved.</p>
+            <a href="https://pcpartpicker.com/">PCPartPicker</a> | 
+            <a href="https://www.logicalincrements.com/">Logical Increments</a>
+        </div>
+
         <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
 
     </body>
