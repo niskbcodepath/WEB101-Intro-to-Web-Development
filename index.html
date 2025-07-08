@@ -1,159 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- head
-
-        Purpose:
-        - Title used here shows up in the browser tab
-        - Link to the favicon (small image that appears in the browser tab)
-        - Link to the CSS file (used to style the webpage)
-
-        When To Modify:
-        - [ ] Project 2 (REQUIRED FEATURE) 
-        - [ ] Project 2 (STRETCH FEATURE) (favicon)
-        - [ ] Any time after
-        -->
         <link rel="icon" href="img/Icon.png">
         <link rel="stylesheet" href="styles.css">
         <title>Easea PC</title>
     </head>
     
     <body>
-    
-        <!-- navbar [PLACEHOLDER] [ADDED IN UNIT 4] -->
+        <!-- navbar -->
+        <div class="navbar-container">
+            <ul>
+                <li class="flex-item"><a href="#home">Home</a></li>
+                <li class="flex-item"><a href="#about">About</a></li>
+                <li class="flex-item"><a href="#schedule">Schedule</a></li>
+                <li class="flex-item"><a href="#links">Links</a></li>
+            </ul>
+        </div>
 
-        <!-- headings
-
-        Purpose:
-        - Main header section of the webpage
-        - Contains the title, subtitle, image, and key buttons for the webpage
-
-        When To Modify:
-        - [ ] Project 2 (REQUIRED FEATURE) 
-        - [ ] Project 3 (REQUIRED FEATURE) 
-        - [ ] Project 4 (REQUIRED FEATURE) 
-        - [ ] Any time after
-        -->
-        <div class="header">
-            <img id="header-img" src="./img/Icon.png"/>
-            <div id="header-left">
-                <h1>Easea PC</h1>
+        <!-- header -->
+        <div class="header-container" id="home">
+            <img class="flex-item" src="./img/Icon.png"/>
+            <div class="header-item">
+                <h1>Easea PC - Brian Niski</h1>
                 <h2>Part Picker. Community. Shop.</h2>
             </div>
-            <div id="header-right">
+            <div class="header-item">
                 <button type="button">Sign Up</button>
                 <button type="button">Contact</button>
             </div>
         </div>
 
-        
-        <!-- about
+        <!-- about -->
+        <div class="about-container" id="about">
+            <h2 class="flex-item">About the Event</h2>
+            <iframe class="flex-item" src="https://www.youtube.com/embed/C_aJz_V0Yz0?si=6LoGWXxYZPENpMwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="flex-item">Our platform is designed to empower users to research, compare, and build custom PCs by offering tools for component selection, compatibility checks, and price tracking.</p>
+            <p class="flex-item">It fosters a vibrant community of tech enthusiasts, gamers, and content creators who share builds, reviews, and advice, promoting education and skill development in PC assembly.</p>
+            <p class="flex-item">By incorporating features like energy-efficient component recommendations and resources for underrepresented groups, the website aims to promote sustainability and inclusivity in the tech space.</p>
+            <p class="flex-item">The platform connects consumers, manufacturers, retailers, and influencers, creating a dynamic ecosystem for PC building and innovation at any time and place!</p>
+            <h3 class="flex-item">What to Expect</h3>
+            <h4 class="flex-item">Empowering Your PC Building Journey</h4>
+            <ul class="flex-item">
+                <li> <b>Sustainable Building:</b> <i>Learn to select energy-efficient components and reduce e-waste with our guides and recommendations.</i></li>
+                <li> <b>Budget-Friendly Options:</b> <i>Access price comparisons and deal alerts to build high-performance PCs without breaking the bank.</i></li>
+                <li> <b>Inclusive Community:</b> <i>Join workshops and forums designed for all skill levels, with resources for underrepresented groups in tech.</i></li>
+            </ul>
+        </div>
 
-        Purpose:
-        - Section for general info about the event
-        - Contains a video, description, and key points about the event
+        <!-- schedule -->
+        <div class="schedule-container" id="schedule">
+            <h2 class="flex-item">Event Schedule</h2>
+            <div class="schedule-item">
+                <img class="flex-item" src="./img/pc-4136383.png"/>
+                <div class="flex-item">
+                    <h3>Plan</h3>
+                    <p>This is an interactive online workshop guiding users through the process of designing their custom PC build.</p>
+                    <p>Participants will use the website's tools to select components, check compatibility, and optimize their build for performance, budget, or energy efficiency.</p>
+                    <p>This event includes live tutorials from experienced builders, Q&A sessions with tech experts, and step-by-step guidance on using the compatibility checker and build creation tools.</p>
+                    <p>Users can save their builds, share them in real-time with the community for feedback, and learn about sustainable component choices, fostering both education and practical skill development.</p>
+                </div>
+            </div>
+            <div class="schedule-item">
+                <img class="flex-item" src="./img/social-media-3846597_1920.png"/>
+                <div class="flex-item">
+                    <h3>Socialize</h3>
+                    <p>This is a community-driven virtual meetup on the website's forums and discussion boards, where users connect to share their PC builds, exchange tips, and discuss the latest hardware trends.</p>
+                    <p>Activities include live build showcases, where participants present their custom PCs, and themed discussions on topics like gaming setups, budget builds, or eco-friendly components.</p>
+                    <p>Users can engage with content creators and influencers, participate in polls, and network with tech enthusiasts, fostering a sense of community and inclusivity across all skill levels.</p>
+                </div>
+            </div>
+            <div class="schedule-item">
+                <img class="flex-item" src="./img/online-6063329_1920.png"/>
+                <div class="flex-item">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li> <b>Price Comparison Marathon:</b> <i>Users explore the website's price tracking tools to compare component prices across retailers like Amazon, Newegg, and Micro Center.</i></li>
+                        <li> <b>Deal Hunt Challenge:</b> <i>Participants set price alerts and compete to find the best deals on components, with winners showcased on the community leaderboard.</i></li>
+                        <li> <b>Guided Shopping Sessions:</b> <i>Live sessions with experts who help users select components based on budget, performance, or sustainability goals.</i></li>
+                        <li> <b>User Reviews and Feedback:</b> <i>Shoppers share and read reviews on components, ensuring informed purchasing decisions during the event.</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-        When To Modify:
-        - [ ] Project 2 (REQUIRED FEATURE) 
-        - [ ] Project 2 (STRETCH FEATURE) 
-        - [ ] Project 4 (STRETCH FEATURE) 
-        - [ ] Any time between / after
-        --> 
-        <h2>About the Event</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/C_aJz_V0Yz0?si=6LoGWXxYZPENpMwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p>Our platform is designed to empower users to research, compare, and build custom PCs by offering tools for component selection, compatibility checks, and price tracking.</p>
-        <p>It fosters a vibrant community of tech enthusiasts, gamers, and content creators who share builds, reviews, and advice, promoting education and skill development in PC assembly.</p>
-        <p>By incorporating features like energy-efficient component recommendations and resources for underrepresented groups, the website aims to promote sustainability and inclusivity in the tech space.</p>
-        <p>The platform connects consumers, manufacturers, retailers, and influencers, creating a dynamic ecosystem for PC building and innovation at any time and place!</p>
+        <!-- links -->
+        <div class="links-container" id="links">
+            <h2 class="flex-item">Links</h2>
+            <a class="block flex-item" href="https://www.pcmag.com/how-to/how-to-build-a-pc-the-ultimate-beginners-guide#">
+                <article>
+                    <h3>How to Build a PC: The Ultimate Beginners Guide</h3>
+                    <p>A comprehensive guide from Tom's Hardware that walks beginners through the step-by-step process of building a PC, perfect for users learning to use the website's build creation and compatibility tools.</p>
+                </article>
+            </a>
+            <a class="block flex-item" href="https://pcsite.medium.com/building-a-green-pc-sustainability-in-computing-ca9d88ba0885">
+                <article>
+                    <h3>Building a Green PC: Sustainability in Computing.</h3>
+                    <p>A Medium article discussing eco-friendly PC building practices, offering insights into selecting energy-efficient components, aligning with the website's sustainability goals.</p>
+                </article>
+            </a>
+        </div>
 
-        <h3>What to Expect</h3>
-        <h4>Tag Line</h4>
-        <ul>
-            <li> <b>Bullet 1:</b> <i>Description</i></li>
-            <li> <b>Bullet 2:</b> <i>Description</i></li>
-            <li> <b>Bullet 3:</b> <i>Description</i></li>
-        </ul>
-
-        <!-- schedule
-
-        Purpose:
-        - Section for specific info about the event's schedule
-        - Contains images and descriptions of each activity
-
-        When To Modify:
-        - [ ] Project 2 (REQUIRED FEATURE) 
-        - [ ] Project 4 (STRETCH FEATURE) 
-        - [ ] Any time between / after
-        --> 
-        <h2>Event Schedule</h2>
-
-        <img src="./img/pc-4136383.png"/>
-        <h3>Plan</h3>
-        <p>This is an interactive online workshop guiding users through the process of designing their custom PC build.</p>
-        <p>Participants will use the website's tools to select components, check compatibility, and optimize their build for performance, budget, or energy efficiency.</p>
-        <p>This event includes live tutorials from experienced builders, Q&A sessions with tech experts, and step-by-step guidance on using the compatibility checker and build creation tools.</p>
-        <p>Users can save their builds, share them in real-time with the community for feedback, and learn about sustainable component choices, fostering both education and practical skill development.</p>
-            
-        <img src="./img/social-media-3846597_1920.png"/>
-        <h3>Socialize</h3>
-        <p>This is a community-driven virtual meetup on the website's forums and discussion boards, where users connect to share their PC builds, exchange tips, and discuss the latest hardware trends.</p>
-        <p>Activities include live build showcases, where participants present their custom PCs, and themed discussions on topics like gaming setups, budget builds, or eco-friendly components.</p>
-        <p>Users can engage with content creators and influencers, participate in polls, and network with tech enthusiasts, fostering a sense of community and inclusivity across all skill levels.</p>
-
-        <img src="./img/online-6063329_1920.png"/>
-        <h3>Shop</h3>
-        <ul>
-            <li> <b>Price Comparison Marathon:</b> <i>Users explore the website's price tracking tools to compare component prices across retailers like Amazon, Newegg, and Micro Center.</i></li>
-            <li> <b>Deal Hunt Challenge:</b> <i>Participants set price alerts and compete to find the best deals on components, with winners showcased on the community leaderboard.</i></li>
-            <li> <b>Guided Shopping Sessions:</b> <i>Live sessions with experts who help users select components based on budget, performance, or sustainability goals.</i></li>
-            <li> <b>User Reviews and Feedback:</b> <i>Shoppers share and read reviews on components, ensuring informed purchasing decisions during the event.</i></li>
-        </ul>
-
-        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
-        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
-
-        <!-- links
-
-        Purpose:
-        - Links to other resources related to the event
-
-        When To Modify:
-        - [ ] Project 2 (STRETCH FEATURE) 
-        - [ ] Project 4 (STRETCH FEATURE) 
-        - [ ] Any time between / after
-        --> 
-        <h2>Links</h2>
-
-        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
-        <a class="block" href="https://www.tomshardware.com/reviews/how-to-build-a-pc,5868.html">
-            <article>
-                <h3>How to Build a PC: The Ultimate Beginners Guide</h3>
-                <p>A comprehensive guide from Tom's Hardware that walks beginners through the step-by-step process of building a PC, perfect for users learning to use the website's build creation and compatibility tools.</p>
-            </article>
-        </a>
-        <a class="block" href="https://www.techradar.com/features/going-green-how-to-build-a-sustainable-gaming-pc">
-            <article>
-                <h3>Sustainable PC Building: How to Reduce Your Environmental Impact</h3>
-                <p>A TechRadar article discussing eco-friendly PC building practices, offering insights into selecting energy-efficient components, aliging with the website's sustainability goals.</p>
-            </article>
-        </a>
-            
-        <!-- footer
-
-        Purpose:
-        - Section for reference information like links, copyright, or contact info
-
-        When To Modify:
-        - [ ] Project 3 (STRETCH FEATURE) 
-        - [ ] Any time after
-        -->
-        <div class="footer">
-            <p>&copy; 2025 Easea PC. All rights reserved.</p>
-            <a href="https://pcpartpicker.com/">PCPartPicker</a> | 
-            <a href="https://www.logicalincrements.com/">Logical Increments</a>
+        <!-- footer -->
+        <div class="footer-container">
+            <p class="flex-item">© 2025 Easea PC. All rights reserved.</p>
+            <a class="flex-item" href="https://pcpartpicker.com/">PCPartPicker</a> 
+            <span class="flex-item"> | </span>
+            <a class="flex-item" href="https://www.logicalincrements.com/">NextGen PC Building</a>
         </div>
 
         <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
-
     </body>
 </html>
