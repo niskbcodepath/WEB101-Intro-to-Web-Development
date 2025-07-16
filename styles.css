@@ -123,6 +123,11 @@ button {
     text-align: center;
 }
 
+#theme-button {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    padding: 8px 16px;
+}
+
 button:hover {
     background-color: var(--accent-color-dark);
     color: var(--accent-color-light);
@@ -285,6 +290,23 @@ button:hover {
 .links-container .block {
     display: flex;
     flex-direction: column;
+}
+
+/* Default dark mode style */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Dark mode style for h1 */
+.dark-mode h1 {
+    background-color: #333;
+    color: white;
+}
+
+/* Dark mode style for visited links */
+.dark-mode a:visited * {
+    color: white;
 }
 
 /*** Flex Item ***/
