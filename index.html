@@ -14,6 +14,7 @@
                 <li class="flex-item"><a href="#about">About</a></li>
                 <li class="flex-item"><a href="#schedule">Schedule</a></li>
                 <li class="flex-item"><a href="#links">Links</a></li>
+                <li class="flex-item"><a href="#rsvp">RSVP</a></li>
                 <button id="theme-button">Toggle Dark Mode</button>
             </ul>
         </div>
@@ -99,6 +100,45 @@
                     <p>A Medium article discussing eco-friendly PC building practices, offering insights into selecting energy-efficient components, aligning with the website's sustainability goals.</p>
                 </article>
             </a>
+        </div>
+
+        <!-- rsvp
+        Purpose:
+        - Section for users to sign up for the event
+        - Contains a form for users to input their information, 
+          and a list of other users who have signed up
+        When To Modify:
+        - [ ] Project 6 (REQUIRED FEATURE) 
+        - [ ] Project 6 (STRETCH FEATURE) 
+        - [ ] Any time after
+        --> 
+        <div id="rsvp">
+            <h2>RSVP</h2>
+            <p id="rsvp-count">⭐ 3 people have RSVP'd to this event!</p>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    <p>Join our Easea PC event to build your dream PC! Participate in interactive workshops, connect with our vibrant tech community, and discover the best deals on components. RSVP now to reserve your spot!</p>
+                </div>
+                <div class="rsvp-participants">
+                    <p>🎟️ Alex from California has RSVP'd.</p>
+                    <p>🎟️ Sam from Oregon has RSVP'd.</p>
+                    <p>🎟️ Jordan from Nevada has RSVP'd.</p>
+                </div>
+            </div>
+
+            <!--- Sign RSVP Form --->
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required><br>
+                    <label for="state">State:</label><br>
+                    <input type="text" id="state" name="state" placeholder="e.g., California" required><br>
+                </form>
+                <!-- Submit button -->
+                <button id="rsvp-button">Submit RSVP</button>
+            </div>      
         </div>
 
         <!-- footer -->
