@@ -14,7 +14,6 @@
                 <li class="flex-item"><a href="#about">About</a></li>
                 <li class="flex-item"><a href="#schedule">Schedule</a></li>
                 <li class="flex-item"><a href="#links">Links</a></li>
-                <li class="flex-item"><a href="#rsvp">RSVP</a></li>
                 <button id="theme-button">Toggle Dark Mode</button>
             </ul>
         </div>
@@ -27,8 +26,8 @@
                 <h2>Part Picker. Community. Shop.</h2>
             </div>
             <div class="header-item">
-                <button type="button">Sign Up</button>
-                <button type="button">Contact</button>
+                <button type="button" onclick="window.location.href='#rsvp';">RSVP</button>
+                <button type="button" onclick="window.location.href='#contact';">Contact</button>
             </div>
         </div>
 
@@ -117,7 +116,7 @@
             <p id="rsvp-count">⭐ 3 people have RSVP'd to this event!</p>
             <div class="rsvp-container">
                 <div class="rsvp-para">
-                    <p>Join our Easea PC event to build your dream PC! Participate in interactive workshops, connect with our vibrant tech community, and discover the best deals on components. RSVP now to reserve your spot!</p>
+                    <p>Join our Easea PC event to build your dream PC! Participate in interactive workshops, connect with our vibrant tech community, and discover the best deals on components. RSVP now to reserve your spot! We will send you email updates, and you can unsubscribe to us whenever you want!</p>
                 </div>
                 <div class="rsvp-participants">
                     <p>🎟️ Alex from California has RSVP'd.</p>
@@ -138,7 +137,14 @@
                 </form>
                 <!-- Submit button -->
                 <button id="rsvp-button">Submit RSVP</button>
-            </div>      
+            </div>
+        </div>
+
+        <!--- contact --->
+        <div id="contact">
+            <h2>Contact</h2>
+            <p>Thank you for coming to my webpage! This is my LinkedIn:</p>
+            <a href="https://www.linkedin.com/in/brian-n-8691a91a3">LinkedIn</a>
         </div>
 
         <!-- footer -->
@@ -147,9 +153,11 @@
             <a class="flex-item" href="https://pcpartpicker.com/">PCPartPicker</a> 
             <span class="flex-item"> | </span>
             <a class="flex-item" href="https://www.logicalincrements.com/">NextGen PC Building</a>
+            <span class="flex-item"> | </span>
+            <a class="flex-item" href="https://technical.city/">Technical City</a>
         </div>
 
         <!-- script-->
-         <script src="index.js" defer></script>
+        <script src="index.js"></script>
     </body>
 </html>

@@ -201,7 +201,6 @@ button:hover {
     font-family: Tahoma, sans-serif;
     font-size: 14px;
     padding: 10px 0;
-    opacity: 50%;
     gap: 10px;
 }
 
@@ -320,6 +319,51 @@ button:hover {
 .rsvp-participants {
     width: 45%;
     padding-right: 10px;
+}
+
+.error {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--error-color-border);
+    background-color: var(--error-color);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Additional form styling */
+#rsvp-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+#rsvp-form br {
+    display: none;
+}
+
+#rsvp-form label {
+    flex: 0 0 auto;
+    margin-right: 5px;
+    font-family: Tahoma, sans-serif;
+    color: var(--text-color-dark-mode);
+}
+
+#rsvp-form input {
+    flex: 0 0 150px;
+    padding: 5px;
+    border: 1px solid var(--accent-color-dark);
+    border-radius: 4px;
+}
+
+#rsvp-button {
+    flex: 0 0 auto;
 }
 
 /* Add other rsvp-related selectors here */
