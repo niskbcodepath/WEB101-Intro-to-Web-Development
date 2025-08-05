@@ -129,6 +129,11 @@ button {
     padding: 8px 16px;
 }
 
+#reduce-motion-button {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    padding: 8px 16px;
+}
+
 button:hover {
     background-color: var(--accent-color-dark);
     color: var(--accent-color-light);
@@ -147,7 +152,7 @@ button:hover {
     border-bottom: 3px solid var(--accent-color-medium);
     border-radius: 5px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -160,6 +165,10 @@ button:hover {
     padding-left: 15px;
     flex: 1;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .header-item:nth-of-type(2) {
@@ -170,6 +179,10 @@ button:hover {
     padding-right: 15px;
     flex: 1;
     width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .header-button {
@@ -292,17 +305,7 @@ button:hover {
     flex-direction: column;
 }
 
-/*** RSVP Section ***
-  
-  Purpose:
-  - Add style rules for your website's RSVP form
-
-  When To Modify:
-  - [ ] Project 6 (REQUIRED FEATURE)
-  - [ ] Project 7 (REQUIRED FEATURE)
-  - [ ] Any time after
-***/
-
+/*** RSVP Section ***/
 .rsvp-container {
     display: flex;
     flex-direction: row;
@@ -366,7 +369,50 @@ button:hover {
     flex: 0 0 auto;
 }
 
-/* Add other rsvp-related selectors here */
+/*** Modal ***/
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 500px;
+}
+
+#modal-image {
+    max-width: 200px;
+    height: auto;
+}
+
+#close-modal-button {
+    background-color: var(--accent-color-green);
+    color: var(--text-color-dark-mode);
+    border: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Tahoma, sans-serif;
+    margin-top: 10px;
+}
+
+#close-modal-button:hover {
+    background-color: var(--accent-color-dark);
+    color: var(--accent-color-light);
+    border: 1px solid var(--accent-color-darkest);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 /* Default dark mode style */
 .dark-mode {
@@ -390,7 +436,7 @@ button:hover {
     flex: 1;
 }
 
-/*** Custom Colors (OPTIONAL) ***/
+/*** Custom Colors ***/
 :root {
     --bg-color: #a6a0cf;
     --text-color: #231942;

@@ -15,6 +15,7 @@
                 <li class="flex-item"><a href="#schedule">Schedule</a></li>
                 <li class="flex-item"><a href="#links">Links</a></li>
                 <button id="theme-button">Toggle Dark Mode</button>
+                <button id="reduce-motion-button">Reduce Motion</button>
             </ul>
         </div>
 
@@ -101,16 +102,7 @@
             </a>
         </div>
 
-        <!-- rsvp
-        Purpose:
-        - Section for users to sign up for the event
-        - Contains a form for users to input their information, 
-          and a list of other users who have signed up
-        When To Modify:
-        - [ ] Project 6 (REQUIRED FEATURE) 
-        - [ ] Project 6 (STRETCH FEATURE) 
-        - [ ] Any time after
-        --> 
+        <!-- rsvp -->
         <div id="rsvp">
             <h2>RSVP</h2>
             <p id="rsvp-count">⭐ 3 people have RSVP'd to this event!</p>
@@ -155,6 +147,15 @@
             <a class="flex-item" href="https://www.logicalincrements.com/">NextGen PC Building</a>
             <span class="flex-item"> | </span>
             <a class="flex-item" href="https://technical.city/">Technical City</a>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal" id="thanks-modal">
+            <div class="modal-content" id="thanks-content-modal">
+                <p id="modal-text">Thank you for RSVPing! We'll see you at the event!</p>
+                <img src="img/Icon.png" id="modal-image"/>
+                <button id="close-modal-button">Close</button>
+            </div>
         </div>
 
         <!-- script-->
